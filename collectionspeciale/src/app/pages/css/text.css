@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-data{
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start;
+}
+
+.flex-button{
+    min-width : 640px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom : 1%;
+}

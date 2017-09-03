@@ -1,1 +1,27 @@
-Voici ma video
+<div class="flex">
+    <div class="flex-button">
+        <button class="btn button-item" (click)="isSynopsis = true"> Synopsis </button>
+        <button class="btn button-item" (click)="isSynopsis = false"> Crédits </button>
+    </div>
+    <div class="text-data">
+        <div *ngIf="isSynopsis">
+            {{synopsis}}
+        </div>
+        <div *ngIf="!isSynopsis">
+            <div class="flex">
+                <div class="text-data">
+                    Réalisateur : {{credits.realisateur}}
+                </div>
+                <div class="text-data">
+                    Producteur : {{credits.producteur}}
+                </div>
+                <div class="text-data">
+                    Acteurs : &nbsp;
+                    <div *ngFor="let acteur of credits.acteurs">
+                        {{acteur}}&nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

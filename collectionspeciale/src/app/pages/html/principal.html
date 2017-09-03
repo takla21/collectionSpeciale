@@ -1,29 +1,12 @@
-<!-- <div class="container-fluid">
-    <div class="row flex">
-        <div class="item-flex">
-            <header-component> </header-component>
-        </div>
-    </div>
-    <div class="row flex">
-        <video-component> </video-component>
-    </div>
-    <div class="row flex">
-        <text-component> </text-component>
-    </div>
-    <div class="row flex">
-        <footer-component> </footer-component>
-    </div>
-</div> -->
-
 <div class="flex">
     <div class="item-flex">
         <header-component> </header-component>
     </div>
     <div class="item-flex">
-        <video-component> </video-component>
+        <video-component [url]="video.url"> </video-component>
     </div>
     <div class="item-flex">
-        <text-component> </text-component>
+        <text-component [synopsis]="video.synopsis" [credits]="video.credits"> </text-component>
     </div>
     <div class="item-flex">
         <footer-component> </footer-component>
